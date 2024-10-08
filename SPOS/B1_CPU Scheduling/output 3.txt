@@ -1,0 +1,45 @@
+# FCFS OUTPUT :-
+
+PS C:\Users\hrutik\Desktop\SPOS>  & 'C:\Program Files\Java\jdk-21\bin\java.exe' '-agentlib:jdwp=transport=dt_socket,server=n,suspend=y,address=localhost:51071' '-XX:+ShowCodeDetailsInExceptionMessages' '-cp' 'C:\Users\hrutik\AppData\Roaming\Code\User\workspaceStorage\8e21d46553eb37cbc4864f1cf80de357\redhat.java\jdt_ws\SPOS_76b9b6c2\bin' 'FCFS' 
+Enter the number of processes: 5
+Enter Burst Time for each process:
+P1: 3
+P2: 6
+P3: 8
+P4: 4
+P5: 5
+
+Process Burst Time      Waiting Time    Turn Around Time
+P1      3               0               3
+P2      6               3               9
+P3      8               9               17
+P4      4               17              21
+P5      5               21              26
+
+Average Waiting Time: 10.0
+Average Turn Around Time: 15.2
+PS C:\Users\hrutik\Desktop\SPOS> 
+
+
+# SJF OUTPUT:-
+
+PS C:\Users\hrutik\Desktop\SPOS>  & 'C:\Program Files\Java\jdk-21\bin\java.exe' '-agentlib:jdwp=transport=dt_socket,server=n,suspend=y,address=localhost:51058' '-XX:+ShowCodeDetailsInExceptionMessages' '-cp' 'C:\Users\hrutik\AppData\Roaming\Code\User\workspaceStorage\8e21d46553eb37cbc4864f1cf80de357\redhat.java\jdt_ws\SPOS_76b9b6c2\bin' 'SJF1' 
+Enter number of processes: 4
+
+Enter Burst Time for each process:
+Process[1]: 5
+Process[2]: 3
+Process[3]: 4
+Process[4]: 6
+
+Process  Burst Time     Waiting Time    Turnaround Time
+P2              3               0               3
+P3              4               3               7
+P1              5               7               12
+P4              6               12              18
+
+Average Waiting Time: 5.5
+Average Turnaround Time: 10.0
+PS C:\Users\hrutik\Desktop\SPOS>
+
+

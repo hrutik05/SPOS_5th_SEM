@@ -1,0 +1,16 @@
+START 100
+        READ    A
+MOVER   AREG,BREG
+        LTORG
+        DC      =5
+        DC      =1
+        DC      =6
+        DC      =7
+        MOVEM   AREG,BREG
+        LTORG
+        DC      =2
+LOOP    READ    B
+A       DS      1
+B       DC      '1'
+        DC      =1
+        END
